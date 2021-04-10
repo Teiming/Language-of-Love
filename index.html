@@ -9,7 +9,7 @@
       --light: #FFDFB9;
     }
     header {
-      height: 72pt;
+      height: 60pt;
       background-color: var(--dark);
     }
     li:hover {
@@ -344,19 +344,59 @@
       </article>
       <article class="row" id="result" style="display: none;">
         <section class="col">
-          <div class="card mb-3">
+          <div class="card mb-3 collapse" id="expA">
             <div class="card-header">
-              <h5 class="card-title">결과</h5>
+              A: 인정하는 말
             </div>
             <div class="card-body">
-              <table class="table table-striped text-center mx-0">
+              <p class="card-text">이들에게 격려의 말은 용기를 북돋아주고 안정감을 줍니다. 무언가를 부탁할 때도 정중하게 표현하게 되면 자신을 인격과 능력을 인정한다고 생각합니다. </p>
+            </div>
+          </div>
+          <div class="card mb-3 collapse" id="expB">
+            <div class="card-header">
+              B: 함께하는 시간
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card mb-3 collapse" id="expC">
+            <div class="card-header">
+              C: 선물
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card mb-3 collapse" id="expD">
+            <div class="card-header">
+              D: 봉사
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card mb-3 collapse" id="expE">
+            <div class="card-header">
+              E: 스킨십
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              결과
+            </div>
+            <div class="card-body">
+              <table class="table table-striped text-center">
                 <thead>
                   <tr>
-                    <th>인정하는 말</th>
-                    <th>함께하는 시간</th>
-                    <th>선물</th>
-                    <th>봉사</th>
-                    <th>스킨십</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -369,7 +409,12 @@
               </table>
               <p class="card-text">&bullet; 점수가 동일하게 나오는 경우, 둘 중 하나만 만족해도 사랑을 느낌.</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer d-flex justify-content-around">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#expA">A</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#expB">B</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#expC">C</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#expD">D</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#expE">E</button>
             </div>
           </div>
         </section>
