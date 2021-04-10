@@ -12,6 +12,10 @@
       height: 72pt;
       background-color: var(--dark);
     }
+    li:hover {
+      background-color: var(--dark);
+      color: var(--light);
+    }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>사랑의 언어 테스트</title>
@@ -42,8 +46,8 @@
               1번
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">나는 상대로부터 인정만는 말 듣는 것을 좋아한다.</li>
-              <li class="list-group-item">나는 상대가 안아주는 것을 좋아한다.</li>
+              <li class="list-group-item" onclick="selection('A');">나는 상대로부터 인정만는 말 듣는 것을 좋아한다.</li>
+              <li class="list-group-item" onclick="selection('B');">나는 상대가 안아주는 것을 좋아한다.</li>
             </ul>
           </div>
 
@@ -106,15 +110,76 @@
               <li class="list-group-item">나에게는 눈에 보이는 선물이 매우 의미가 있다</li>
             </ul>
           </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+              8번
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">나는 상대와 함께 붙어 앉는 것을 좋아한다</li>
+              <li class="list-group-item">나는 상대가 나에 대해 매러적이라고 할 때 좋아한다</li>
+            </ul>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+              9번
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">나는 상대와 함께 시간 보내는 것을 좋아한다</li>
+              <li class="list-group-item">나는 상대에게 작지만 선물 받는 것을 좋아한다</li>
+            </ul>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+              10번
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">나는 상대가 나를 도와 출때 사랑을 느낀다</li>
+              <li class="list-group-item">나를 이해해 주는 말들이 나에게는 중요하다</li>
+            </ul>
+          </div>
         </section>
       </article>
     </main>
     <footer>
-      오타 제보 받습니다!
-        나는 상대와 함께 붙어 앉는 것을 좋아한다 나는 상대가 나에 대해 매러적이라고 할 때 좋아한다 나는 상대와 함께 시간 보내는 것을 좋아한다 나는 상대에게 작지만 선물 받는 것을 좋아한다 나는 상대가 나를 도와 출때 사랑을 느낀다 나를 이해해 주는 말들이 나에게는 중요하다 나는 상대와 원가 함께 하는 것을 좋아한다 나는 상대가 해주는 친절 한 말들을 좋아한다 나는 상대와 포옹한 때 완전함을 느낀다 나는 상대의 말보다 행동을 불 때 더 감동한다 나는 상대의 칭찬을 좋아하고 비판을 회피하는 편이다 나는 기다란 선물보다는 작지만 자주 받는 것을 좋아한다 나는 상대가 자주 신재접촉해 출 때 더 친근한을 느낀다 나는 상대와 함께 원가 하거나 이야기한 때 친밀함을 느낀다
+<li class="list-group-item">나는 상대와 원가 함께 하는 것을 좋아한다</li>
+<li class="list-group-item">나는 상대가 해주는 친절 한 말들을 좋아한다</li>
+<li class="list-group-item">나는 상대와 포옹한 때 완전함을 느낀다</li>
+<li class="list-group-item">나는 상대의 말보다 행동을 불 때 더 감동한다</li>
+<li class="list-group-item">나는 상대의 칭찬을 좋아하고 비판을 회피하는 편이다</li>
+<li class="list-group-item">나는 기다란 선물보다는 작지만 자주 받는 것을 좋아한다</li>
+<li class="list-group-item">나는 상대가 자주 신재접촉해 출 때 더 친근한을 느낀다</li>
+<li class="list-group-item">나는 상대와 함께 원가 하거나 이야기한 때 친밀함을 느낀다</li>
     </footer>
     <script type="text/javascript">
-
+    var valueA = 0;
+    var valueB = 0;
+    var valueC = 0;
+    var valueD = 0;
+    var valueE = 0;
+    function selection(value0) {
+      switch (value0) {
+        case A:
+        valueA = valueA + 1;
+          break;
+        case B:
+        valueB = valueB + 1;
+          break;
+        case C:
+        valueC = valueC + 1;
+          break;
+        case D:
+        valueD = valueD + 1;
+          break;
+        case E:
+        valueE = valueE + 1;
+          break;
+        default:
+        alert("Error");
+      }
+    }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
